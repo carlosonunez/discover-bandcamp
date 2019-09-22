@@ -1,6 +1,8 @@
 require 'rspec'
 require 'discover_bandcamp'
 
+include DiscoverBandcamp
+
 @sample_albums = [
   { album_name: "We Want More", artist: "Neverlearn" },
   { album_name: "Demo '19", artist: "Hey Maxine" },
