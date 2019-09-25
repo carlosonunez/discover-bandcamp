@@ -1,5 +1,13 @@
 version: '3.7'
 services:
+  hub:
+    image: selenium/hub
+    ports:
+      - 4444:4444
+  browser:
+    image: selenium/chrome
+    links:
+      - hub
   units:
     build:
       context: .
